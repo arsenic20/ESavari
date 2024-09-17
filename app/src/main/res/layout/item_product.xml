@@ -48,8 +48,8 @@
 
                 <ImageView
                     android:id="@+id/product_image"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:textSize="22sp"
                     android:textAlignment="center"
                     android:layout_marginBottom="10dp"
@@ -67,6 +67,8 @@
                     android:text='@{"Price: " + product.price}'
                     android:textSize="12sp"
                     android:layout_marginTop="5dp"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/productName"
                     app:layout_constraintStart_toEndOf="@id/product_image"
                     android:textColor="@android:color/black" />
@@ -78,6 +80,8 @@
                     android:text='@{"Disscount: " + product.discountPercentage + "%"}'
                     android:textSize="12sp"
                     android:layout_marginTop="5dp"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/productPrice"
                     app:layout_constraintStart_toEndOf="@id/product_image"
                     android:textColor="@android:color/black" />
@@ -90,6 +94,8 @@
                     android:textSize="12sp"
                     android:layout_marginTop="5dp"
                     android:paddingBottom="10dp"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/productDisscount"
                     app:layout_constraintStart_toEndOf="@id/product_image"
                     android:textColor="@android:color/black" />
